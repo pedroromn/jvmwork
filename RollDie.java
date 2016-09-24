@@ -5,14 +5,14 @@ public class RollDie
     public static void main(String args[])
     {
         SecureRandom randomNumbers = new SecureRandom();
-
+        
         int frequency1 = 0;
         int frequency2 = 0;
         int frequency3 = 0;
         int frequency4 = 0;
         int frequency5 = 0;
         int frequency6 = 0;
-
+        
         for (int roll = 0; roll <= 6000000; roll++) {
 
             int face = 1 + randomNumbers.nextInt(6);
