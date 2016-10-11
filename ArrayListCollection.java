@@ -26,6 +26,27 @@ public class ArrayListCollection{
         items.add("yellow");
         display(items, "List with two new elements");
 
-        
+        items.remove("yellow"); // remove the first "yellow"
+        display(items, "Remove first instance of yellow: ");
+
+        items.remove(1); // remove item at index 1
+        display(items, "Remove second list element (green)");
+
+        // check if a value is in the List
+        System.out.printf("\"red\" is %sin the list%n",
+                          items.contains("red") ? "":"not ");
+
+        // display number of elements in the List
+        System.out.printf("Size: %s%n", items.size());
+    }
+
+    public static void display(ArrayList<String> items, String header){
+        System.out.printf(header);
+
+        for(String item : items){
+            System.out.printf(" %s", item);
+        }
+
+        System.out.printf("%n");
     }
 }
