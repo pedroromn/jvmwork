@@ -17,5 +17,7 @@ public class Time1{
         this.second = second;
     }
 
-    
+    public String toUniversalString(){
+        return String.format("%02d:%02d:%02d", hour, minute, second);
+    }
 } // end class Time1
